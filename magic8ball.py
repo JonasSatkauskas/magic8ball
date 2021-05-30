@@ -1,13 +1,18 @@
 import random
 import time
 
-
-# Galimi programos atsakymai
-pasirinkimu = ['Taip', 'Ne', 'Aš dabar užsiėmęs... Paklausk manęs vėliau...', 'Tikrai taip!', 'Tikrai ne!', 'Suformuluok klausimą kitaip']
-time.sleep(0.5)
+time.sleep(0.2)
 # Pasisveikinimas su paaiškinimu
 print('Labas, aš be rūpesčių atsakysiu į klausimą su pradžia "ar"')
 print("\nJeigu nori išeiti, įvesk raidę 'q'")
+# Galimi programos atsakymai
+atsakymai = ['Taip', 
+			'Ne', 
+			'Aš dabar užsiėmęs... Paklausk manęs vėliau...', 
+			'Tikrai taip!', 
+			'Tikrai ne!', 
+			'Suformuluok klausimą kitaip']
+
 
 index = 1
 
@@ -16,8 +21,8 @@ while True:
 	if index % 4 == 0:
 		time.sleep(0.5)
 		print("Jeigu nori išeiti, įvesk raidę 'q'")
-	# Atsakymo priskyrimas kimtamajam, kad jį paskui būtų galima išprintint
-	pasirinkimas = random.choice(pasirinkimu)
+	# Atsakymo priskyrimas kintamajam, kad jį paskui būtų galima išprintint
+	pasirinkimas = random.choice(atsakymai)
 	print()
 	
 	time.sleep(0.7)
